@@ -1,0 +1,30 @@
+SPARQL:
+  endpoint_url: "https://data-issa.cirad.fr/sparql"
+  query: |
+    PREFIX bibo: <http://purl.org/ontology/bibo/>
+    SELECT ?document ?doi
+    FROM <http://data-issa.cirad.fr/graph/documents>
+    WHERE {
+        ?document bibo:doi ?doi .
+    }
+    GROUP BY ?document ?doi
+    HAVING (COUNT(DISTINCT ?document) = 1)
+
+API:
+  base_url: "https://api.openalex.org/works/"
+  mailto_param: "franck.michel@inria.fr"
+  use_mailto: true
+  max_workers: 100
+  pause_duration: 0.1
+
+MICROSERVICE:
+  url_auth_authorships: "http://localhost/service/OpenAlex/findAuthorshipsByDoi"
+  url_auth_sdg: "http://localhost/service/OpenAlex/findSdgByDoi"
+  url_auth_topics: "http://localhost/service/OpenAlex/findTopicsByDoi"
+
+output_paths:
+  article_data: "Data_Request/results/article_data.json"
+  article_data_interdisciplinarity: "Data_Request/results/article_data_interdisciplinarity.json"
+  authorship_data: "Data_Request/results/authorship_data.ttl"
+  sdg_data: "Data_Request/results/sdg_data.ttl"
+  topic_data: "Data_Request/results/topic_data.ttl"

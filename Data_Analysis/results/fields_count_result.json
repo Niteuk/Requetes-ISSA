@@ -1,0 +1,167 @@
+{
+    "meta": {
+        "count": 26,
+        "db_response_time_ms": 5,
+        "page": 1,
+        "per_page": 100,
+        "groups_count": null
+    },
+    "results": [
+        {
+            "field": "https://openalex.org/fields/11",
+            "label": "Agricultural and Biological Sciences",
+            "occurrences": 5242,
+            "avg_score": 0.9674864746279911
+        },
+        {
+            "field": "https://openalex.org/fields/23",
+            "label": "Environmental Science",
+            "occurrences": 2138,
+            "avg_score": 0.9685550514499541
+        },
+        {
+            "field": "https://openalex.org/fields/13",
+            "label": "Biochemistry, Genetics and Molecular Biology",
+            "occurrences": 1399,
+            "avg_score": 0.9871857040743415
+        },
+        {
+            "field": "https://openalex.org/fields/27",
+            "label": "Medicine",
+            "occurrences": 1185,
+            "avg_score": 0.9851377215189892
+        },
+        {
+            "field": "https://openalex.org/fields/33",
+            "label": "Social Sciences",
+            "occurrences": 939,
+            "avg_score": 0.9005890308839193
+        },
+        {
+            "field": "https://openalex.org/fields/22",
+            "label": "Engineering",
+            "occurrences": 368,
+            "avg_score": 0.9587043478260873
+        },
+        {
+            "field": "https://openalex.org/fields/24",
+            "label": "Immunology and Microbiology",
+            "occurrences": 327,
+            "avg_score": 0.9854847094801225
+        },
+        {
+            "field": "https://openalex.org/fields/14",
+            "label": "Business, Management and Accounting",
+            "occurrences": 228,
+            "avg_score": 0.9216456140350877
+        },
+        {
+            "field": "https://openalex.org/fields/16",
+            "label": "Chemistry",
+            "occurrences": 143,
+            "avg_score": 0.959800699300699
+        },
+        {
+            "field": "https://openalex.org/fields/20",
+            "label": "Economics, Econometrics and Finance",
+            "occurrences": 141,
+            "avg_score": 0.9107120567375889
+        },
+        {
+            "field": "https://openalex.org/fields/29",
+            "label": "Nursing",
+            "occurrences": 132,
+            "avg_score": 0.9494507575757573
+        },
+        {
+            "field": "https://openalex.org/fields/19",
+            "label": "Earth and Planetary Sciences",
+            "occurrences": 108,
+            "avg_score": 0.9585759259259263
+        },
+        {
+            "field": "https://openalex.org/fields/17",
+            "label": "Computer Science",
+            "occurrences": 102,
+            "avg_score": 0.9287745098039213
+        },
+        {
+            "field": "https://openalex.org/fields/36",
+            "label": "Health Professions",
+            "occurrences": 94,
+            "avg_score": 0.7888829787234041
+        },
+        {
+            "field": "https://openalex.org/fields/34",
+            "label": "Veterinary",
+            "occurrences": 67,
+            "avg_score": 0.9769865671641788
+        },
+        {
+            "field": "https://openalex.org/fields/18",
+            "label": "Decision Sciences",
+            "occurrences": 64,
+            "avg_score": 0.9253890624999999
+        },
+        {
+            "field": "https://openalex.org/fields/26",
+            "label": "Mathematics",
+            "occurrences": 64,
+            "avg_score": 0.98878125
+        },
+        {
+            "field": "https://openalex.org/fields/12",
+            "label": "Arts and Humanities",
+            "occurrences": 48,
+            "avg_score": 0.8380437499999998
+        },
+        {
+            "field": "https://openalex.org/fields/25",
+            "label": "Materials Science",
+            "occurrences": 47,
+            "avg_score": 0.9800744680851062
+        },
+        {
+            "field": "https://openalex.org/fields/32",
+            "label": "Psychology",
+            "occurrences": 35,
+            "avg_score": 0.9709257142857143
+        },
+        {
+            "field": "https://openalex.org/fields/28",
+            "label": "Neuroscience",
+            "occurrences": 23,
+            "avg_score": 0.9880695652173913
+        },
+        {
+            "field": "https://openalex.org/fields/21",
+            "label": "Energy",
+            "occurrences": 23,
+            "avg_score": 0.8338782608695652
+        },
+        {
+            "field": "https://openalex.org/fields/30",
+            "label": "Pharmacology, Toxicology and Pharmaceutics",
+            "occurrences": 19,
+            "avg_score": 0.9721421052631579
+        },
+        {
+            "field": "https://openalex.org/fields/31",
+            "label": "Physics and Astronomy",
+            "occurrences": 14,
+            "avg_score": 0.94825
+        },
+        {
+            "field": "https://openalex.org/fields/15",
+            "label": "Chemical Engineering",
+            "occurrences": 9,
+            "avg_score": 0.9725222222222223
+        },
+        {
+            "field": "https://openalex.org/fields/35",
+            "label": "Dentistry",
+            "occurrences": 1,
+            "avg_score": 1.0
+        }
+    ]
+}

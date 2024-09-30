@@ -1,0 +1,80 @@
+{
+    "meta": {
+        "count": 17,
+        "db_response_time_ms": 2,
+        "page": 1,
+        "per_page": 100,
+        "groups_count": null
+    },
+    "results": [
+        {
+            "id": "https://openalex.org/sdgs/1",
+            "display_name": "No poverty"
+        },
+        {
+            "id": "https://openalex.org/sdgs/2",
+            "display_name": "Zero hunger"
+        },
+        {
+            "id": "https://openalex.org/sdgs/3",
+            "display_name": "Good health and well-being"
+        },
+        {
+            "id": "https://openalex.org/sdgs/4",
+            "display_name": "Quality education"
+        },
+        {
+            "id": "https://openalex.org/sdgs/5",
+            "display_name": "Gender equality"
+        },
+        {
+            "id": "https://openalex.org/sdgs/6",
+            "display_name": "Clean water and sanitation"
+        },
+        {
+            "id": "https://openalex.org/sdgs/7",
+            "display_name": "Affordable and clean energy"
+        },
+        {
+            "id": "https://openalex.org/sdgs/8",
+            "display_name": "Decent work and economic growth"
+        },
+        {
+            "id": "https://openalex.org/sdgs/9",
+            "display_name": "Industry, innovation and infrastructure"
+        },
+        {
+            "id": "https://openalex.org/sdgs/10",
+            "display_name": "Reduced inequalities"
+        },
+        {
+            "id": "https://openalex.org/sdgs/11",
+            "display_name": "Sustainable cities and communities"
+        },
+        {
+            "id": "https://openalex.org/sdgs/12",
+            "display_name": "Responsible consumption and production"
+        },
+        {
+            "id": "https://openalex.org/sdgs/13",
+            "display_name": "Climate action"
+        },
+        {
+            "id": "https://openalex.org/sdgs/14",
+            "display_name": "Life below water"
+        },
+        {
+            "id": "https://openalex.org/sdgs/15",
+            "display_name": "Life on land"
+        },
+        {
+            "id": "https://openalex.org/sdgs/16",
+            "display_name": "Peace, justice, and strong institutions"
+        },
+        {
+            "id": "https://openalex.org/sdgs/17",
+            "display_name": "Partnerships for the goals"
+        }
+    ],
+    "group_by": []
+}

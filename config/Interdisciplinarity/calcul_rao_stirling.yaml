@@ -1,0 +1,16 @@
+# Configuration for calcul_rao-Stirling script
+
+# Filepaths
+data_file: "Data_Request/results/article_data_interdisciplinarity.json"
+output_result_file: "Interdisciplinarity/results/rao_stirling_topics.json"  # DEFAULT: This will change automatically based on the level below
+output_matrix_file: "Interdisciplinarity/results/rao_stirling_full_citation_matrix_topics.csv"  # DEFAULT: This will change automatically based on the level below
+
+# Level of analysis (options: topics, subfields, fields, domains)
+level: "topics"  # Default is 'topics'. Change to 'subfields', 'fields', or 'domains' for different levels
+
+# Control whether to run occurrence calculation and RDF conversion
+run_occurrence_calculation: true  # Run the occurrence calculation script after Rao-Stirling
+run_rdf_conversion: true          # Run the RDF conversion script after Rao-Stirling
+
+# Control whether to save the full citation matrix
+save_matrix: true  # Control whether to save the citation matrix

@@ -1,0 +1,113 @@
+{
+    "meta": {
+        "count": 17,
+        "db_response_time_ms": 5,
+        "page": 1,
+        "per_page": 100,
+        "groups_count": null
+    },
+    "results": [
+        {
+            "sdg": "https://metadata.un.org/sdg/15",
+            "label": "Life on land",
+            "occurrences": 1611,
+            "avg_score": 0.6053941651148341
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/2",
+            "label": "Zero hunger",
+            "occurrences": 1157,
+            "avg_score": 0.6209507346586005
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/3",
+            "label": "Good health and well-being",
+            "occurrences": 400,
+            "avg_score": 0.7020500000000004
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/14",
+            "label": "Life below water",
+            "occurrences": 392,
+            "avg_score": 0.7040561224489792
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/13",
+            "label": "Climate action",
+            "occurrences": 317,
+            "avg_score": 0.5862145110410101
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/6",
+            "label": "Clean water and sanitation",
+            "occurrences": 254,
+            "avg_score": 0.6508267716535435
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/12",
+            "label": "Responsible consumption and production",
+            "occurrences": 207,
+            "avg_score": 0.4583091787439612
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/17",
+            "label": "Partnerships for the goals",
+            "occurrences": 123,
+            "avg_score": 0.4847967479674796
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/11",
+            "label": "Sustainable cities and communities",
+            "occurrences": 97,
+            "avg_score": 0.6157731958762883
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/9",
+            "label": "Industry, innovation and infrastructure",
+            "occurrences": 87,
+            "avg_score": 0.511609195402299
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/8",
+            "label": "Decent work and economic growth",
+            "occurrences": 80,
+            "avg_score": 0.5131250000000002
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/1",
+            "label": "No poverty",
+            "occurrences": 79,
+            "avg_score": 0.5982278481012657
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/10",
+            "label": "Reduced inequalities",
+            "occurrences": 70,
+            "avg_score": 0.5868571428571426
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/16",
+            "label": "Peace, justice, and strong institutions",
+            "occurrences": 70,
+            "avg_score": 0.5347142857142855
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/7",
+            "label": "Affordable and clean energy",
+            "occurrences": 35,
+            "avg_score": 0.6914285714285715
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/4",
+            "label": "Quality education",
+            "occurrences": 21,
+            "avg_score": 0.6509523809523811
+        },
+        {
+            "sdg": "https://metadata.un.org/sdg/5",
+            "label": "Gender equality",
+            "occurrences": 20,
+            "avg_score": 0.563
+        }
+    ]
+}

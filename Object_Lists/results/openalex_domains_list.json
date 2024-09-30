@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "count": 4,
+        "db_response_time_ms": 1,
+        "page": 1,
+        "per_page": 100,
+        "groups_count": null
+    },
+    "results": [
+        {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+        },
+        {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+        },
+        {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+        },
+        {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+        }
+    ],
+    "group_by": []
+}

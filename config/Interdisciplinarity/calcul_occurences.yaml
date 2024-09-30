@@ -1,0 +1,20 @@
+# Configuration for the occurrences calculation script
+
+# Filepaths for topics level
+input_filepath: "Interdisciplinarity/results/rao_stirling_topics.json"
+output_filepath: "Interdisciplinarity/results/rao_stirling_occurrences_topics.json"
+
+# Filepaths for subfields level
+# input_filepath: "Interdisciplinarity/results/rao_stirling_subfields.json"
+# output_filepath: "Interdisciplinarity/results/rao_stirling_occurrences_subfields.json"
+
+# Filepaths for fields level
+# input_filepath: "Interdisciplinarity/results/rao_stirling_fields.json"
+# output_filepath: "Interdisciplinarity/results/rao_stirling_occurrences_fields.json"
+
+# Filepaths for domains level
+# input_filepath: "Interdisciplinarity/results/rao_stirling_domains.json"
+# output_filepath: "Interdisciplinarity/results/rao_stirling_occurrences_domains.json"
+
+# Interval for occurrences
+interval: 0.1  # The interval size for calculating Rao-Stirling Index occurrences

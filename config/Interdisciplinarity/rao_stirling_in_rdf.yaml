@@ -1,0 +1,19 @@
+# Configuration for Rao-Stirling in RDF conversion
+
+# Filepaths for topics level
+input_filepath: "Interdisciplinarity/results/rao_stirling_topics.json"
+output_filepath: "Interdisciplinarity/results/rao_stirling.ttl"
+
+# Filepaths for subfields level
+# input_filepath: "Interdisciplinarity/results/rao_stirling_subfields.json"
+# output_filepath: "Interdisciplinarity/results/rao_stirling_subfields.ttl"
+
+# Filepaths for fields level
+# input_filepath: "Interdisciplinarity/results/rao_stirling_fields.json"
+# output_filepath: "Interdisciplinarity/results/rao_stirling_fields.ttl"
+
+# Filepaths for domains level
+# input_filepath: "Interdisciplinarity/results/rao_stirling_domains.json"
+# output_filepath: "Interdisciplinarity/results/rao_stirling_domains.ttl"
+
+

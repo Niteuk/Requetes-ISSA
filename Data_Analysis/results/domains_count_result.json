@@ -1,0 +1,35 @@
+{
+    "meta": {
+        "count": 4,
+        "db_response_time_ms": 5,
+        "page": 1,
+        "per_page": 100,
+        "groups_count": null
+    },
+    "results": [
+        {
+            "domain": "https://openalex.org/domains/1",
+            "label": "Life Sciences",
+            "occurrences": 5776,
+            "avg_score": 0.9697371191135594
+        },
+        {
+            "domain": "https://openalex.org/domains/3",
+            "label": "Physical Sciences",
+            "occurrences": 2635,
+            "avg_score": 0.9651197722960134
+        },
+        {
+            "domain": "https://openalex.org/domains/4",
+            "label": "Health Sciences",
+            "occurrences": 1400,
+            "avg_score": 0.9704805000000035
+        },
+        {
+            "domain": "https://openalex.org/domains/2",
+            "label": "Social Sciences",
+            "occurrences": 1311,
+            "avg_score": 0.9053129672006102
+        }
+    ]
+}

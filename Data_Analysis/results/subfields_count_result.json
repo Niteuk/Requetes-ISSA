@@ -1,0 +1,1163 @@
+{
+    "meta": {
+        "count": 192,
+        "db_response_time_ms": 5,
+        "page": 1,
+        "per_page": 100,
+        "groups_count": null
+    },
+    "results": [
+        {
+            "subfield": "https://openalex.org/subfields/1105",
+            "label": "Ecology, Evolution, Behavior and Systematics",
+            "occurrences": 2121,
+            "avg_score": 0.9528525223950985
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1110",
+            "label": "Plant Science",
+            "occurrences": 2075,
+            "avg_score": 0.979897253012052
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2303",
+            "label": "Ecology",
+            "occurrences": 808,
+            "avg_score": 0.9709376237623769
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2306",
+            "label": "Global and Planetary Change",
+            "occurrences": 748,
+            "avg_score": 0.9778470588235301
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1312",
+            "label": "Molecular Biology",
+            "occurrences": 711,
+            "avg_score": 0.9873226441631503
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3312",
+            "label": "Sociology and Political Science",
+            "occurrences": 635,
+            "avg_score": 0.9024401574803147
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1109",
+            "label": "Insect Science",
+            "occurrences": 545,
+            "avg_score": 0.9877200000000012
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1107",
+            "label": "Forestry",
+            "occurrences": 542,
+            "avg_score": 0.9607129151291511
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1106",
+            "label": "Food Science",
+            "occurrences": 507,
+            "avg_score": 0.9599822485207116
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1102",
+            "label": "Agronomy and Crop Science",
+            "occurrences": 506,
+            "avg_score": 0.9805330039525694
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2739",
+            "label": "Public Health, Environmental and Occupational Health",
+            "occurrences": 485,
+            "avg_score": 0.9830719587628874
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1311",
+            "label": "Genetics",
+            "occurrences": 477,
+            "avg_score": 0.9865415094339616
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1100",
+            "label": "General Agricultural and Biological Sciences",
+            "occurrences": 454,
+            "avg_score": 0.9226433920704848
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2725",
+            "label": "Infectious Diseases",
+            "occurrences": 442,
+            "avg_score": 0.9931128959276018
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2308",
+            "label": "Management, Monitoring, Policy and Law",
+            "occurrences": 399,
+            "avg_score": 0.945212280701754
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2309",
+            "label": "Nature and Landscape Conservation",
+            "occurrences": 391,
+            "avg_score": 0.9911723785166241
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2713",
+            "label": "Epidemiology",
+            "occurrences": 327,
+            "avg_score": 0.9934853211009175
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1111",
+            "label": "Soil Science",
+            "occurrences": 268,
+            "avg_score": 0.970989925373135
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1108",
+            "label": "Horticulture",
+            "occurrences": 249,
+            "avg_score": 0.9775180722891563
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1307",
+            "label": "Cell Biology",
+            "occurrences": 166,
+            "avg_score": 0.9896198795180716
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2405",
+            "label": "Parasitology",
+            "occurrences": 161,
+            "avg_score": 0.9872434782608689
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1408",
+            "label": "Strategy and Management",
+            "occurrences": 149,
+            "avg_score": 0.9254677852348991
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2305",
+            "label": "Environmental Engineering",
+            "occurrences": 148,
+            "avg_score": 0.9655371621621616
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1103",
+            "label": "Animal Science and Zoology",
+            "occurrences": 147,
+            "avg_score": 0.976010884353742
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3320",
+            "label": "Political Science and International Relations",
+            "occurrences": 137,
+            "avg_score": 0.9024094890510949
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2916",
+            "label": "Nutrition and Dietetics",
+            "occurrences": 132,
+            "avg_score": 0.9494507575757573
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2002",
+            "label": "Economics and Econometrics",
+            "occurrences": 122,
+            "avg_score": 0.9078737704918036
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2302",
+            "label": "Ecological Modeling",
+            "occurrences": 121,
+            "avg_score": 0.991194214876033
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2204",
+            "label": "Biomedical Engineering",
+            "occurrences": 119,
+            "avg_score": 0.9721436974789913
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3322",
+            "label": "Urban Studies",
+            "occurrences": 101,
+            "avg_score": 0.8897039603960392
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2736",
+            "label": "Pharmacology",
+            "occurrences": 98,
+            "avg_score": 0.9896132653061219
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2304",
+            "label": "Environmental Chemistry",
+            "occurrences": 96,
+            "avg_score": 0.9495645833333336
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1310",
+            "label": "Endocrinology",
+            "occurrences": 92,
+            "avg_score": 0.9905456521739128
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2210",
+            "label": "Mechanical Engineering",
+            "occurrences": 91,
+            "avg_score": 0.9719417582417584
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3314",
+            "label": "Anthropology",
+            "occurrences": 89,
+            "avg_score": 0.9231292134831459
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2312",
+            "label": "Water Science and Technology",
+            "occurrences": 82,
+            "avg_score": 0.9532060975609754
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2310",
+            "label": "Pollution",
+            "occurrences": 79,
+            "avg_score": 0.9583151898734175
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3600",
+            "label": "General Health Professions",
+            "occurrences": 78,
+            "avg_score": 0.7747243589743589
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2403",
+            "label": "Immunology",
+            "occurrences": 76,
+            "avg_score": 0.973036842105263
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2215",
+            "label": "Building and Construction",
+            "occurrences": 75,
+            "avg_score": 0.9680626666666667
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1305",
+            "label": "Biotechnology",
+            "occurrences": 67,
+            "avg_score": 0.9809805970149255
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3404",
+            "label": "Small Animals",
+            "occurrences": 66,
+            "avg_score": 0.9767227272727269
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2404",
+            "label": "Microbiology",
+            "occurrences": 66,
+            "avg_score": 0.9910848484848483
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1702",
+            "label": "Artificial Intelligence",
+            "occurrences": 64,
+            "avg_score": 0.9577046874999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3305",
+            "label": "Geography, Planning and Development",
+            "occurrences": 59,
+            "avg_score": 0.949105084745763
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1902",
+            "label": "Atmospheric Science",
+            "occurrences": 56,
+            "avg_score": 0.9864642857142852
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1604",
+            "label": "Inorganic Chemistry",
+            "occurrences": 53,
+            "avg_score": 0.983366037735849
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2611",
+            "label": "Modeling and Simulation",
+            "occurrences": 51,
+            "avg_score": 0.9902921568627452
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2406",
+            "label": "Virology",
+            "occurrences": 49,
+            "avg_score": 0.9955530612244896
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2704",
+            "label": "Biochemistry",
+            "occurrences": 48,
+            "avg_score": 0.9801458333333334
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1803",
+            "label": "Management Science and Operations Research",
+            "occurrences": 46,
+            "avg_score": 0.9108543478260869
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1104",
+            "label": "Aquatic Science",
+            "occurrences": 43,
+            "avg_score": 0.9767418604651162
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1602",
+            "label": "Analytical Chemistry",
+            "occurrences": 43,
+            "avg_score": 0.9803488372093023
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2307",
+            "label": "Health, Toxicology and Mutagenesis",
+            "occurrences": 42,
+            "avg_score": 0.9666857142857139
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1605",
+            "label": "Organic Chemistry",
+            "occurrences": 42,
+            "avg_score": 0.9061166666666668
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1403",
+            "label": "Business and International Management",
+            "occurrences": 40,
+            "avg_score": 0.94059
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3303",
+            "label": "Development",
+            "occurrences": 39,
+            "avg_score": 0.8756820512820516
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2212",
+            "label": "Ocean Engineering",
+            "occurrences": 37,
+            "avg_score": 0.9294324324324321
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2205",
+            "label": "Civil and Structural Engineering",
+            "occurrences": 35,
+            "avg_score": 0.9759428571428572
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3207",
+            "label": "Social Psychology",
+            "occurrences": 30,
+            "avg_score": 0.97626
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2214",
+            "label": "Media Technology",
+            "occurrences": 29,
+            "avg_score": 0.9332827586206895
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2211",
+            "label": "Mechanics of Materials",
+            "occurrences": 28,
+            "avg_score": 0.9367357142857146
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2746",
+            "label": "Surgery",
+            "occurrences": 27,
+            "avg_score": 0.9675666666666666
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2707",
+            "label": "Complementary and alternative medicine",
+            "occurrences": 26,
+            "avg_score": 0.9883307692307692
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3317",
+            "label": "Demography",
+            "occurrences": 24,
+            "avg_score": 0.8680125000000002
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2105",
+            "label": "Renewable Energy, Sustainability and the Environment",
+            "occurrences": 22,
+            "avg_score": 0.8303863636363634
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2734",
+            "label": "Pathology and Forensic Medicine",
+            "occurrences": 20,
+            "avg_score": 0.9869349999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2502",
+            "label": "Biomaterials",
+            "occurrences": 20,
+            "avg_score": 0.9860650000000002
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3311",
+            "label": "Safety Research",
+            "occurrences": 19,
+            "avg_score": 0.9213842105263158
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2507",
+            "label": "Polymers and Plastics",
+            "occurrences": 19,
+            "avg_score": 0.9749526315789472
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1204",
+            "label": "Archeology",
+            "occurrences": 19,
+            "avg_score": 0.9024105263157893
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1405",
+            "label": "Management of Technology and Innovation",
+            "occurrences": 18,
+            "avg_score": 0.8586888888888891
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1409",
+            "label": "Tourism, Leisure and Hospitality Management",
+            "occurrences": 18,
+            "avg_score": 0.977261111111111
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1303",
+            "label": "Biochemistry",
+            "occurrences": 18,
+            "avg_score": 0.9865111111111111
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3004",
+            "label": "Pharmacology",
+            "occurrences": 17,
+            "avg_score": 0.9665529411764706
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2705",
+            "label": "Cardiology and Cardiovascular Medicine",
+            "occurrences": 17,
+            "avg_score": 0.9886235294117649
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1313",
+            "label": "Molecular Medicine",
+            "occurrences": 16,
+            "avg_score": 0.9980500000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1908",
+            "label": "Geophysics",
+            "occurrences": 16,
+            "avg_score": 0.8960999999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1710",
+            "label": "Information Systems",
+            "occurrences": 16,
+            "avg_score": 0.9399312500000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2311",
+            "label": "Industrial and Manufacturing Engineering",
+            "occurrences": 16,
+            "avg_score": 0.92944375
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1911",
+            "label": "Paleontology",
+            "occurrences": 16,
+            "avg_score": 0.9862625000000002
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2804",
+            "label": "Cellular and Molecular Neuroscience",
+            "occurrences": 15,
+            "avg_score": 0.9898866666666668
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1407",
+            "label": "Organizational Behavior and Human Resource Management",
+            "occurrences": 14,
+            "avg_score": 0.8637214285714286
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1705",
+            "label": "Computer Networks and Communications",
+            "occurrences": 14,
+            "avg_score": 0.7271500000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2712",
+            "label": "Endocrinology, Diabetes and Metabolism",
+            "occurrences": 14,
+            "avg_score": 0.9822428571428574
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2003",
+            "label": "Finance",
+            "occurrences": 14,
+            "avg_score": 0.9398642857142855
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1203",
+            "label": "Language and Linguistics",
+            "occurrences": 13,
+            "avg_score": 0.7792153846153848
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2000",
+            "label": "General Economics, Econometrics and Finance",
+            "occurrences": 13,
+            "avg_score": 0.8837923076923077
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2505",
+            "label": "Materials Chemistry",
+            "occurrences": 12,
+            "avg_score": 0.9821
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1802",
+            "label": "Information Systems and Management",
+            "occurrences": 12,
+            "avg_score": 0.9681500000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2737",
+            "label": "Physiology",
+            "occurrences": 11,
+            "avg_score": 0.9001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1304",
+            "label": "Biophysics",
+            "occurrences": 11,
+            "avg_score": 0.9912181818181819
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1711",
+            "label": "Signal Processing",
+            "occurrences": 11,
+            "avg_score": 0.9832454545454545
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2741",
+            "label": "Radiology, Nuclear Medicine and Imaging",
+            "occurrences": 11,
+            "avg_score": 0.8419454545454546
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3306",
+            "label": "Health",
+            "occurrences": 11,
+            "avg_score": 0.8029545454545454
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3304",
+            "label": "Education",
+            "occurrences": 10,
+            "avg_score": 0.7791899999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1910",
+            "label": "Oceanography",
+            "occurrences": 10,
+            "avg_score": 0.94608
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3310",
+            "label": "Linguistics and Language",
+            "occurrences": 10,
+            "avg_score": 0.82987
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3316",
+            "label": "Cultural Studies",
+            "occurrences": 9,
+            "avg_score": 0.8488333333333332
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2735",
+            "label": "Pediatrics, Perinatology and Child Health",
+            "occurrences": 9,
+            "avg_score": 0.9718888888888889
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2208",
+            "label": "Electrical and Electronic Engineering",
+            "occurrences": 8,
+            "avg_score": 0.9379875000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3109",
+            "label": "Statistical and Nonlinear Physics",
+            "occurrences": 8,
+            "avg_score": 0.9521249999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2402",
+            "label": "Applied Microbiology and Biotechnology",
+            "occurrences": 8,
+            "avg_score": 0.9702250000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1207",
+            "label": "History and Philosophy of Science",
+            "occurrences": 8,
+            "avg_score": 0.9257750000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2613",
+            "label": "Statistics and Probability",
+            "occurrences": 8,
+            "avg_score": 0.9755749999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1306",
+            "label": "Cancer Research",
+            "occurrences": 8,
+            "avg_score": 0.9870999999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2206",
+            "label": "Computational Mechanics",
+            "occurrences": 8,
+            "avg_score": 0.9831624999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2721",
+            "label": "Hepatology",
+            "occurrences": 8,
+            "avg_score": 0.9998375
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1906",
+            "label": "Geochemistry and Petrology",
+            "occurrences": 7,
+            "avg_score": 0.9011285714285714
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3300",
+            "label": "General Social Sciences",
+            "occurrences": 7,
+            "avg_score": 0.8117857142857143
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2809",
+            "label": "Sensory Systems",
+            "occurrences": 7,
+            "avg_score": 0.9891
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2209",
+            "label": "Industrial and Manufacturing Engineering",
+            "occurrences": 7,
+            "avg_score": 0.9554999999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1607",
+            "label": "Spectroscopy",
+            "occurrences": 6,
+            "avg_score": 0.9885666666666667
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1308",
+            "label": "Clinical Biochemistry",
+            "occurrences": 6,
+            "avg_score": 0.9826499999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1314",
+            "label": "Physiology",
+            "occurrences": 6,
+            "avg_score": 0.9855333333333333
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1406",
+            "label": "Marketing",
+            "occurrences": 6,
+            "avg_score": 0.9781333333333334
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1707",
+            "label": "Computer Vision and Pattern Recognition",
+            "occurrences": 6,
+            "avg_score": 0.9754333333333335
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3616",
+            "label": "Speech and Hearing",
+            "occurrences": 6,
+            "avg_score": 0.7254833333333334
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1904",
+            "label": "Earth-Surface Processes",
+            "occurrences": 5,
+            "avg_score": 0.82502
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1202",
+            "label": "History",
+            "occurrences": 5,
+            "avg_score": 0.76148
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1706",
+            "label": "Computer Science Applications",
+            "occurrences": 5,
+            "avg_score": 0.9267
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2203",
+            "label": "Automotive Engineering",
+            "occurrences": 5,
+            "avg_score": 0.7731800000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1309",
+            "label": "Developmental Biology",
+            "occurrences": 5,
+            "avg_score": 0.98356
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1804",
+            "label": "Statistics, Probability and Uncertainty",
+            "occurrences": 5,
+            "avg_score": 0.93848
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2213",
+            "label": "Safety, Risk, Reliability and Quality",
+            "occurrences": 5,
+            "avg_score": 0.9823000000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1404",
+            "label": "Management Information Systems",
+            "occurrences": 4,
+            "avg_score": 0.8621
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1508",
+            "label": "Process Chemistry and Technology",
+            "occurrences": 4,
+            "avg_score": 0.942775
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2608",
+            "label": "Geometry and Topology",
+            "occurrences": 4,
+            "avg_score": 0.997825
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1211",
+            "label": "Philosophy",
+            "occurrences": 4,
+            "avg_score": 0.943925
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1703",
+            "label": "Computational Theory and Mathematics",
+            "occurrences": 4,
+            "avg_score": 0.851225
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3308",
+            "label": "Law",
+            "occurrences": 4,
+            "avg_score": 0.9595750000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2702",
+            "label": "Anatomy",
+            "occurrences": 4,
+            "avg_score": 0.5217
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2723",
+            "label": "Immunology and Allergy",
+            "occurrences": 4,
+            "avg_score": 0.984475
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2743",
+            "label": "Reproductive Medicine",
+            "occurrences": 4,
+            "avg_score": 0.9543999999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2738",
+            "label": "Psychiatry and Mental health",
+            "occurrences": 4,
+            "avg_score": 0.985025
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3204",
+            "label": "Developmental and Educational Psychology",
+            "occurrences": 4,
+            "avg_score": 0.92295
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1907",
+            "label": "Geology",
+            "occurrences": 4,
+            "avg_score": 0.96255
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1503",
+            "label": "Catalysis",
+            "occurrences": 4,
+            "avg_score": 0.9949250000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2730",
+            "label": "Oncology",
+            "occurrences": 3,
+            "avg_score": 0.9897333333333332
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1212",
+            "label": "Religious studies",
+            "occurrences": 3,
+            "avg_score": 0.7626333333333334
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3315",
+            "label": "Communication",
+            "occurrences": 3,
+            "avg_score": 0.9474
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3313",
+            "label": "Transportation",
+            "occurrences": 3,
+            "avg_score": 0.9759666666666668
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2729",
+            "label": "Obstetrics and Gynecology",
+            "occurrences": 3,
+            "avg_score": 0.9869333333333333
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2202",
+            "label": "Aerospace Engineering",
+            "occurrences": 3,
+            "avg_score": 0.9952333333333333
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3604",
+            "label": "Emergency Medical Services",
+            "occurrences": 3,
+            "avg_score": 0.9861999999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3603",
+            "label": "Complementary and Manual Therapy",
+            "occurrences": 3,
+            "avg_score": 0.9748
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1603",
+            "label": "Electrochemistry",
+            "occurrences": 3,
+            "avg_score": 0.9773999999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3318",
+            "label": "Gender Studies",
+            "occurrences": 2,
+            "avg_score": 0.60785
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1402",
+            "label": "Accounting",
+            "occurrences": 2,
+            "avg_score": 0.90805
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2740",
+            "label": "Pulmonary and Respiratory Medicine",
+            "occurrences": 2,
+            "avg_score": 0.99065
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1206",
+            "label": "Conservation",
+            "occurrences": 2,
+            "avg_score": 0.9462999999999999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2745",
+            "label": "Rheumatology",
+            "occurrences": 2,
+            "avg_score": 0.99885
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3106",
+            "label": "Nuclear and High Energy Physics",
+            "occurrences": 2,
+            "avg_score": 0.9729000000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3402",
+            "label": "Equine",
+            "occurrences": 2,
+            "avg_score": 0.9904
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2207",
+            "label": "Control and Systems Engineering",
+            "occurrences": 2,
+            "avg_score": 0.9192
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3005",
+            "label": "Toxicology",
+            "occurrences": 2,
+            "avg_score": 0.9861500000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3614",
+            "label": "Radiological and Ultrasound Technology",
+            "occurrences": 2,
+            "avg_score": 0.9677
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2708",
+            "label": "Dermatology",
+            "occurrences": 2,
+            "avg_score": 0.9486
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2715",
+            "label": "Gastroenterology",
+            "occurrences": 2,
+            "avg_score": 0.9780500000000001
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1800",
+            "label": "General Decision Sciences",
+            "occurrences": 2,
+            "avg_score": 0.98005
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1506",
+            "label": "Filtration and Separation",
+            "occurrences": 2,
+            "avg_score": 0.99095
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2807",
+            "label": "Endocrine and Autonomic Systems",
+            "occurrences": 2,
+            "avg_score": 0.98025
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3605",
+            "label": "Health Information Management",
+            "occurrences": 1,
+            "avg_score": 0.6421
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3107",
+            "label": "Atomic and Molecular Physics, and Optics",
+            "occurrences": 1,
+            "avg_score": 0.9983
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3203",
+            "label": "Clinical Psychology",
+            "occurrences": 1,
+            "avg_score": 0.9906
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1507",
+            "label": "Fluid Flow and Transfer Processes",
+            "occurrences": 1,
+            "avg_score": 0.9968
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1708",
+            "label": "Hardware and Architecture",
+            "occurrences": 1,
+            "avg_score": 0.9964
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2726",
+            "label": "Microbiology",
+            "occurrences": 1,
+            "avg_score": 0.9578
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2102",
+            "label": "Energy Engineering and Power Technology",
+            "occurrences": 1,
+            "avg_score": 0.9107
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2728",
+            "label": "Neurology",
+            "occurrences": 1,
+            "avg_score": 0.9532
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3611",
+            "label": "Pharmacy",
+            "occurrences": 1,
+            "avg_score": 0.9353
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2604",
+            "label": "Applied Mathematics",
+            "occurrences": 1,
+            "avg_score": 0.9812
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2808",
+            "label": "Neurology",
+            "occurrences": 1,
+            "avg_score": 0.9999
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3003",
+            "label": "Pharmaceutical Science",
+            "occurrences": 1,
+            "avg_score": 0.9948
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3506",
+            "label": "Periodontics",
+            "occurrences": 1,
+            "avg_score": 1.0
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2508",
+            "label": "Surfaces, Coatings and Films",
+            "occurrences": 1,
+            "avg_score": 0.9748
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3205",
+            "label": "Experimental and Cognitive Psychology",
+            "occurrences": 1,
+            "avg_score": 0.9636
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3321",
+            "label": "Public Administration",
+            "occurrences": 1,
+            "avg_score": 0.961
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2716",
+            "label": "Genetics",
+            "occurrences": 1,
+            "avg_score": 1.0
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2720",
+            "label": "Hematology",
+            "occurrences": 1,
+            "avg_score": 0.9913
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1302",
+            "label": "Aging",
+            "occurrences": 1,
+            "avg_score": 0.9988
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2805",
+            "label": "Cognitive Neuroscience",
+            "occurrences": 1,
+            "avg_score": 0.982
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3302",
+            "label": "Archeology",
+            "occurrences": 1,
+            "avg_score": 0.998
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2504",
+            "label": "Electronic, Optical and Magnetic Materials",
+            "occurrences": 1,
+            "avg_score": 0.9905
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3105",
+            "label": "Instrumentation",
+            "occurrences": 1,
+            "avg_score": 0.9608
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1208",
+            "label": "Literature and Literary Theory",
+            "occurrences": 1,
+            "avg_score": 0.2071
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2727",
+            "label": "Nephrology",
+            "occurrences": 1,
+            "avg_score": 0.9147
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3607",
+            "label": "Medical Laboratory Technology",
+            "occurrences": 1,
+            "avg_score": 0.9618
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3108",
+            "label": "Radiation",
+            "occurrences": 1,
+            "avg_score": 0.9711
+        },
+        {
+            "subfield": "https://openalex.org/subfields/3103",
+            "label": "Astronomy and Astrophysics",
+            "occurrences": 1,
+            "avg_score": 0.7825
+        },
+        {
+            "subfield": "https://openalex.org/subfields/2733",
+            "label": "Otorhinolaryngology",
+            "occurrences": 1,
+            "avg_score": 0.9986
+        },
+        {
+            "subfield": "https://openalex.org/subfields/1606",
+            "label": "Physical and Theoretical Chemistry",
+            "occurrences": 1,
+            "avg_score": 0.929
+        }
+    ]
+}
