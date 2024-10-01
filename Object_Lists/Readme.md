@@ -42,9 +42,9 @@ Sauvegarde les données triées ainsi que les métadonnées associées dans un f
 - Utilisation :
 Pour exécuter le script :
 
-        ```bash
-        python Request_all_Objects.py
-        ```
+    ```bash
+    python Request_all_Objects.py
+    ```
 
 Les fichiers de sortie seront sauvegardés dans le dossier Object_Lists/results/ sous les noms suivants :
 openalex_topics_list.json
