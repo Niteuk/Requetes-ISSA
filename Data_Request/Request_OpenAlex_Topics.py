@@ -23,16 +23,15 @@ with open("config/logging.yaml", "rt") as f:
     logging.config.dictConfig(config_log)
     logger = logging.getLogger(__name__)
 
+# SPARQL prefixes
 SPARQL_PREFIXES = """
 PREFIX bibo:   <http://purl.org/ontology/bibo/>
-PREFIX dce:    <http://purl.org/dc/elements/1.1/>
-PREFIX dct:    <http://purl.org/dc/terms/>
-PREFIX foaf:   <http://xmlns.com/foaf/0.1/>
-PREFIX gn:     <http://www.geonames.org/ontology#>
 PREFIX issapr: <http://data-issa.cirad.fr/property/>
+PREFIX issa:   <http://data-issa.cirad.fr/>
+PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX wdt:    <http://www.wikidata.org/prop/direct/>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
 """
 
 
@@ -55,7 +54,7 @@ def fetch_doi_list():
 
 def fetch_data(document_uri, doi):
     """
-    Fetch authorship data for a given DOI and document URI
+    Fetch topics data for a given DOI and document URI
     from the SPARQL microservice
 
     Args:
@@ -70,18 +69,20 @@ def fetch_data(document_uri, doi):
         encoded_doi = quote(doi, safe="")
         sparql_query = SPARQL_PREFIXES + "CONSTRUCT WHERE { ?s ?p ?o. }"
         encoded_sparql_query = urlencode({"query": sparql_query})
-        url = f"{config['services']['authorships']}?documentUri={encoded_document_uri}&documentDoi={encoded_doi}&{encoded_sparql_query}"
 
-        logger.debug(f"Fetching authorship data for DOI {doi}")
-        response = requests.get(url, headers={"Accept": "text/turtle"})
+        url = f"{config['services']['topics']}?documentUri={encoded_document_uri}&documentDoi={encoded_doi}&{encoded_sparql_query}"
+        headers = {"Accept": "text/turtle"}
+
+        logger.debug(f"Fetching topic data for DOI {doi}")
+        response = requests.get(url, headers=headers)
         response.raise_for_status()
         return response.text
     
     except requests.exceptions.HTTPError as e:
-        logger.error(f"Could not retrieve authorship for DOI {doi}: {e.response.text}")
+        logger.error(f"Could not get topic data for DOI {doi}: {e.response.text}")
         return None
     except requests.exceptions.RequestException as e:
-        logger.error(f"Could not retrieve authorship for DOI {doi}: {e}")
+        logger.error(f"Could not get topic data for DOI {doi}: {e}")
         return None
 
 
@@ -110,7 +111,7 @@ if __name__ == "__main__":
                     rdf_data = future.result()
                     if rdf_data:
                         rdf_results.append(rdf_data)
-                        logger.debug(f"Authorship data for DOI {doi} recorded.")
+                        logger.debug(f"Topic data for DOI {doi} recorded.")
                     else:
                         error_count += 1
                 except Exception as exc:
@@ -123,7 +124,7 @@ if __name__ == "__main__":
                 rdf_data = fetch_data(doc_uri, doi)
                 if rdf_data:
                     rdf_results.append(rdf_data)
-                    logger.debug(f"Authorship data for DOI {doi} recorded.")
+                    logger.debug(f"Topic data for DOI {doi} recorded.")
                 else:
                     error_count += 1
             except Exception as exc:
@@ -132,15 +133,14 @@ if __name__ == "__main__":
             time.sleep(config["openalex_api"]["pause_duration"])
 
     # Save RDF results to a Turtle file
-    output = config["output_paths"]["authorship_data"]
-    with open(output, "w", encoding="utf-8") as rdf_file:
+    output_path = config["output_paths"]["topic_data"]
+    with open(output_path, "w", encoding="utf-8") as rdf_file:
         rdf_file.write(SPARQL_PREFIXES)
         for rdf_data in rdf_results:
             for line in rdf_data.splitlines():
                 if not line.startswith("@prefix"):
                     rdf_file.write(line + "\n")
 
-    # Summary logging
-    logger.info(f"Authorship data saved in {output}")
+    logger.info(f"Topic data saved in {output_path}")
     logger.info(f"Number of successful records: {len(rdf_results)}")
     logger.info(f"Number of errors: {error_count}")

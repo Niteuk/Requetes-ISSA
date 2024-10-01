@@ -18,5 +18,5 @@ handlers:
 #     propagate: no
 
 root:
-  level: INFO # DEBUG, INFO, WARNING, ERROR
+  level: DEBUG # DEBUG, INFO, WARNING, ERROR
   handlers: [console]

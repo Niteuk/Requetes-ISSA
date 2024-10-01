@@ -1,57 +1,66 @@
-import requests
 import json
-import time
 import logging
 import logging.config
+import requests
+import time
 import yaml
 from SPARQLWrapper import SPARQLWrapper, JSON
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
-
-# Load logging configuration from YAML
-with open("config/logging.yaml", "rt") as f:
-    config_log = yaml.safe_load(f.read())
-    logging.config.dictConfig(config_log)
-    logger = logging.getLogger(__name__)
-
-
-# Load configuration from YAML
-def load_config(config_file):
-    """Load configuration from the given YAML file."""
-    logger.debug(f"Loading configuration from {config_file}")
-    with open(config_file, "r") as cfg:
-        return yaml.safe_load(cfg)
-
-
-config = load_config("config/Data_Request/requests.yaml")
-
-
-# Fetch DOI list from SPARQL endpoint
-def fetch_doi_list():
-    """Fetch DOI list from the SPARQL endpoint."""
-    sparql = SPARQLWrapper(config["SPARQL"]["endpoint_url"])
-    sparql.setQuery(config["SPARQL"]["query"])
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
-    return [result["doi"]["value"] for result in results["results"]["bindings"]]
 
 
 # Cache to avoid repeated requests
 article_cache = {}
 
 
-# Fetch article info from OpenAlex API
-def fetch_article_info(doi):
-    """Fetch article info from the OpenAlex API."""
+def load_config(config_file):
+    with open(config_file, "r") as cfg:
+        return yaml.safe_load(cfg)
+
+
+# Load configuration
+config = load_config("config/Data_Request/requests.yaml")
+
+# Configure logging
+with open("config/logging.yaml", "rt") as f:
+    config_log = yaml.safe_load(f.read())
+    logging.config.dictConfig(config_log)
+    logger = logging.getLogger(__name__)
+
+ERROR_404 = "Error HTTP status 404"
+ERROR_OTHER = "Other error"
+
+
+def fetch_doi_list():
+    """
+    Fetch DOI list from SPARQL endpoint
+    Returns:
+        dict: dictionary with DOI as key and document URI as value
+    """
+    sparql = SPARQLWrapper(config["issa_sparql_endpoint"]["endpoint_url"])
+    sparql.setQuery(config["issa_sparql_endpoint"]["query"])
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+    return [result["doi"]["value"] for result in results["results"]["bindings"]]
+
+
+def fetch_info(doi):
+    """
+    Fetch article information from the OpenAlex API
+
+    Args:
+        doi (str): document DOI
+
+    Returns:
+        dict: article information
+    """
     full_doi = f"https://doi.org/{doi}"
     if full_doi in article_cache:
         return article_cache[full_doi]
 
-    base_url = config["API"]["base_url"]
-    if config["API"]["use_mailto"]:
-        url = f"{base_url}{full_doi}?mailto={config['API']['mailto_param']}"
-    else:
-        url = f"{base_url}{full_doi}"
+    url = f"{config['openalex_api']['base_url']}{full_doi}"
+    if config["openalex_api"]["use_mailto"]:
+        url += f"?mailto={config['openalex_api']['mailto_param']}"
 
     try:
         response = requests.get(url)
@@ -62,21 +71,28 @@ def fetch_article_info(doi):
         if e.response.status_code == 429:
             logger.warning("Rate limit reached. Sleeping for 20 seconds...")
             time.sleep(20)
-            return fetch_article_info(doi)
+            return fetch_info(doi)
         elif e.response.status_code == 404:
-            return "Error 404"
+            return ERROR_404
         else:
             logger.error(f"Error fetching DOI {full_doi}: {e}")
-            return "Other error"
+            return ERROR_OTHER
     except requests.exceptions.RequestException as e:
         logger.error(f"Request failed for DOI {full_doi}: {e}")
-        return "Other error"
+        return ERROR_OTHER
 
 
-# Extract relevant data from article info
 def extract_article_data(article_info):
-    """Extract relevant data from the article info."""
-    if article_info in ["Error 404", "Other error"]:
+    """
+    Extract some data from OpenAlex data while ignoring non relevant data
+
+    Args:
+        article_info (dict): article information from OpenAlex API
+
+    Returns:
+        dict: reshaped relevant article info
+    """
+    if article_info in [ERROR_404, ERROR_OTHER]:
         return None
     try:
         article_data = {
@@ -140,23 +156,30 @@ def extract_article_data(article_info):
         return None
 
 
-# Process DOI: fetch and extract data
 def process_doi(doi):
-    """Process a DOI to fetch and extract data."""
-    article_info = fetch_article_info(doi)
+    """
+    Process a DOI: retrieve data from OpenAlex for an article given by its DOI
+
+    Args:
+        doi (str): article identifier
+
+    Returns:
+        tuple: error message if any, article data
+    """
+    article_info = fetch_info(doi)
     if article_info:
-        if article_info == "Error 404":
-            return "Error 404", None
-        elif article_info == "Other error":
-            return "Other error", None
+        if article_info == ERROR_404:
+            return ERROR_404, None
+        elif article_info == ERROR_OTHER:
+            return ERROR_OTHER, None
         article_data = extract_article_data(article_info)
         if article_data:
             return None, article_data
     return None, None
 
 
-# Main execution
 if __name__ == "__main__":
+
     articles_data = []
     error_404_count = 0
     other_error_count = 0
@@ -165,16 +188,19 @@ if __name__ == "__main__":
     doi_list = fetch_doi_list()
     logger.info(f"Total DOIs retrieved: {len(doi_list)}")
 
-    if config["API"]["use_mailto"]:
-        with ThreadPoolExecutor(max_workers=config["API"]["max_workers"]) as executor:
+    if config["openalex_api"]["use_mailto"]:
+        # Parallel execution with ThreadPoolExecutor
+        with ThreadPoolExecutor(
+            max_workers=config["openalex_api"]["max_workers"]
+        ) as executor:
             future_to_doi = {executor.submit(process_doi, doi): doi for doi in doi_list}
             for future in tqdm(as_completed(future_to_doi), total=len(doi_list)):
                 doi = future_to_doi[future]
                 try:
                     error, article_data = future.result()
-                    if error == "Error 404":
+                    if error == ERROR_404:
                         error_404_count += 1
-                    elif error == "Other error":
+                    elif error == ERROR_OTHER:
                         other_error_count += 1
                     elif article_data:
                         articles_data.append(article_data)
@@ -182,11 +208,12 @@ if __name__ == "__main__":
                 except Exception as exc:
                     logger.error(f"DOI {doi} generated an exception: {exc}")
     else:
+        # Sequential execution
         for doi in tqdm(doi_list):
             error, article_data = process_doi(doi)
-            if error == "Error 404":
+            if error == ERROR_404:
                 error_404_count += 1
-            elif error == "Other error":
+            elif error == ERROR_OTHER:
                 other_error_count += 1
             elif article_data:
                 articles_data.append(article_data)
