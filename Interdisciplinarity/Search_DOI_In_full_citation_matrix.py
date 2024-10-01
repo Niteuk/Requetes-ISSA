@@ -38,7 +38,7 @@ def get_non_zero_topics(doi, filepath):
 # Example usage
 doi_input = "https://doi.org/10.4000/etudesafricaines.28"
 csv_filepath = (
-    "Interdisciplinarity/results/rao_stirling_upgrade_full_citation_matrix.csv"
+    "Interdisciplinarity/results/rao_stirling_full_citation_matrix_topics.csv"
 )
 result = get_non_zero_topics(doi_input, csv_filepath)
 

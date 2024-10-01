@@ -1,70 +1,104 @@
-Explicaitons Rao-Stirling_Upgrade:
+## Interdisciplinarity
 
-Nous allons toujours calculer rao stirling à l'aide des citations et de la dissimilarité entre les topics.
-Pour ce qui est de pij qui concerne les citations nous allons maintenant pour l'article évalué regarder seulement tous les topics des articles cités. Et nous allons attribuer la proportion d'apparition des ces topics dans les articles cités. Par exemple on évalue l'article A qui cites 3 articles. Au total ces 3 articles sont représentés par 10 topics. Ainsi on va assigner un pourcentage d'apparition de ces 10 topics parmis les 3 articles. Si les topics sont tous représentés 1 seule fois alors ils auront un score de 0.10 soit 10% (par exemple). Ensuite on fait ca pour tous les articles. 
-Pour ce qui concerne la dissimilarité on va calculer la distance de chaque topics récupérer précedement dans les articles cités de l'article qu'on évalue puis on liste ces topics sous forme de combinaison de 2 sans remise pour ne pas avoir de répétition et on calcule leurs distance de la même manière qu'on faisait c'est à dire en assignant des poids de cette manière:
-'topics': 0,
-        'subfields': 0.1,
-        'fields': 0.4,
-        'domains': 0.8,
-        'max': 1.
-
-Pour chaque combinaison on obtient donc un score entre 0 et 1. Puis on additione chacune des scores des combinaisons et on divise par le nombre de combinaisons réalisés. Ce qui la aussi nous donne un score entre 0 et 1 et avec le score des citations et de la dissimilarité on peut faire rao stirling et obtenir la aussi un score entre 0 et 1
+Ce dépôt contient des scripts Python qui permettent de calculer et d'analyser l'indice de Rao-Stirling basé sur les articles scientifiques et leurs citations, ainsi que de convertir les résultats en RDF pour une utilisation ultérieure. Ce dépôt se concentre sur l'analyse de l'interdisciplinarité dans les publications scientifiques.
 
 
+## Structure du dépôt
+
+- calcul_rao_stirling.py : Ce script calcule l'indice de Rao-Stirling pour une liste d'articles et génère une matrice de citation complète, ainsi que les dissimilarités entre les topics, subfields, fields, ou domains.
+- calcul_occurences_rao_stirling.py : Ce script calcule la répartition des indices de Rao-Stirling dans des intervalles définis.
+- rao_stirling_to_rdf.py : Ce script convertit les résultats des calculs de Rao-Stirling en RDF pour une meilleure interopérabilité avec des systèmes externes.
+- Search_DOI_in_full_citation_matrix.py : Ce script permet de rechercher les topics non nuls associés à un DOI spécifique dans une matrice de citations.
 
 
+## Scripts
+
+1. calcul_rao_stirling.py
+- Description :
+Ce script calcule l'indice de Rao-Stirling pour une liste d'articles en se basant sur les citations et les dissimilarités entre les topics, subfields, fields, ou domains. Il permet également de créer une matrice de citation complète pour tous les articles.
+
+- Fonctionnalité :
+Calcule les proportions des topics cités pour chaque article.
+Génère une matrice de citation complète.
+Calcule l'indice de Rao-Stirling pour chaque article en fonction des topics cités et de leur dissimilarité.
+Sauvegarde les résultats sous forme de fichier JSON et CSV.
+
+- Utilisation :
+Pour exécuter le script et générer la matrice de citation complète :
+
+    ```bash
+    python calcul_rao_stirling.py
+    ```
+
+Le fichier de sortie sera sauvegardé dans le chemin spécifié dans le fichier de configuration YAML (output_result_file).
+
+2. calcul_occurences_rao_stirling.py
+- Description :
+Ce script calcule la répartition des indices de Rao-Stirling dans des intervalles définis et sauvegarde les résultats dans un fichier JSON.
+
+- Fonctionnalité :
+Charge les résultats des calculs de Rao-Stirling à partir d'un fichier JSON.
+Calcule la fréquence des indices de Rao-Stirling dans des intervalles prédéfinis.
+Sauvegarde les occurrences des indices dans un fichier JSON.
+
+- Utilisation :
+Pour exécuter le script :
+
+    ```bash
+    python calcul_occurences_rao_stirling.py
+    ```
+
+Le fichier de sortie sera sauvegardé dans le chemin spécifié dans le fichier de configuration YAML (output_filepath).
+
+3. rao_stirling_to_rdf.py
+- Description :
+Ce script convertit les résultats des calculs de Rao-Stirling en RDF afin de permettre une meilleure interopérabilité des données avec d'autres systèmes. Il génère des annotations RDF à partir des résultats de Rao-Stirling et les associe aux articles.
+
+- Fonctionnalité :
+Charge les résultats des calculs de Rao-Stirling depuis un fichier JSON.
+Génère des annotations RDF pour chaque article basé sur son DOI et son indice de Rao-Stirling.
+Sauvegarde les résultats RDF.
+
+- Utilisation :
+Pour exécuter le script :
+
+    ```bash
+    python rao_stirling_to_rdf.py
+    ```
+
+Le fichier RDF sera sauvegardé dans le chemin spécifié dans le fichier de configuration YAML (output_filepath).
+
+4. Search_DOI_in_full_citation_matrix.py
+- Description :
+Ce script permet de rechercher les topics associés à un DOI spécifique dans une matrice de citation, et d'afficher les topics ayant une valeur non nulle.
+
+- Fonctionnalité :
+Lit un fichier CSV contenant une matrice de citation.
+Recherche les topics non nuls associés à un DOI spécifique.
+Affiche les résultats dans la console.
+
+- Utilisation :
+Pour exécuter le script :
+
+    ```bash
+    python Search_DOI_in_full_citation_matrix.py
+    ```
+
+Vous pouvez remplacer le DOI et le chemin du fichier CSV par vos propres valeurs dans le script avant de l'exécuter.
 
 
+## Conclusion
 
+1. Détails du script calcul_rao_stirling.py :
+- create_citation_proportion_matrix() : Calcule les proportions de citation pour chaque article en fonction des topics.
+- calculate_rao_stirling_index() : Calcule l'indice de Rao-Stirling basé sur la dissimilarité moyenne des topics cités.
+- create_full_citation_matrix() : Génère une matrice de citation pour tous les articles.
 
-# Calcul de l'interdisciplinarité avec l'indice de Rao-Stirling
+2. Script calcul_occurences_rao_stirling.py :
+- calculate_occurrences() : Calcule la fréquence des indices de Rao-Stirling dans des intervalles spécifiés.
 
+3. Script rao_stirling_to_rdf.py :
+- convert_to_rdf() : Convertit les résultats des calculs de Rao-Stirling en annotations RDF.
 
-Le script utilise la **formule de Rao-Stirling** pour calculer l'interdisciplinarité. Cette formule prend en compte à la fois la **proportion** des citations et la **dissimilarité** entre les sujets (topics) des articles cités. Voici une explication détaillée de chaque étape :
-
-### 1. **Proportions des citations (\( p_i \))**
-
-Le script calcule la proportion d’apparition de chaque sujet parmi les articles cités via la fonction `create_citation_proportion_matrix()`. La proportion est définie comme :
-
-\[
-p_i = \frac{\text{nombre d'apparitions du sujet i}}{\text{total des sujets cités}}
-\]
-
-Exemple : Si un sujet \( T_1 \) apparaît 3 fois dans les articles cités, et que le total des sujets est 10, alors \( p_1 = 3/10 = 0.3 \).
-
-### 2. **Matrice de dissimilarité (\( d_{ij} \))**
-
-La fonction `create_dissimilarity_matrix()` génère des combinaisons de deux sujets cités (\( T_i \), \( T_j \)) et calcule leur dissimilarité en fonction de leur niveau hiérarchique (topics, subfields, fields, domains). La distance \( d_{ij} \) entre deux sujets est calculée avec des poids spécifiques attribués à chaque niveau :
-
-- **Topics** (même sujet) : distance \( d = 0 \)
-- **Subfields** : distance \( d = 0.1 \)
-- **Fields** : distance \( d = 0.4 \)
-- **Domains** : distance \( d = 0.8 \)
-- **Max** (aucun lien commun) : distance \( d = 1 \)
-
-Ensuite, l'ensemble des dissimilarités est moyenné pour donner une **dissimilarité moyenne** (\( \bar{d} \)) entre tous les sujets cités.
-
-### 3. **Calcul de l'indice de Rao-Stirling**
-
-L'indice de Rao-Stirling mesure l'interdisciplinarité en combinant les proportions des sujets \( p_i \) et \( p_j \) avec la dissimilarité entre eux \( d_{ij} \). La formule est la suivante :
-
-\[
-RS = \sum_{i,j} p_i \cdot p_j \cdot d_{ij}
-\]
-
-Dans le script, cette formule est implémentée dans `calculate_rao_stirling_index()`. Pour chaque paire de sujets \( i \) et \( j \) dans les articles cités, le script multiplie la proportion \( p_i \) de chaque sujet par \( p_j \), puis par la dissimilarité \( d_{ij} \) entre eux.
-
-### Exemple de calcul :
-
-- **Proportions** : Supposons que les proportions des sujets soient \( p_1 = 0.3 \), \( p_2 = 0.2 \), \( p_3 = 0.5 \).
-- **Dissimilarités** : Si les dissimilarités entre les sujets sont \( d_{12} = 0.1 \), \( d_{13} = 0.4 \), \( d_{23} = 0.8 \).
-- **Indice de Rao-Stirling** :
-
-\[
-RS = (0.3 \cdot 0.2 \cdot 0.1) + (0.3 \cdot 0.5 \cdot 0.4) + (0.2 \cdot 0.5 \cdot 0.8) = 0.006 + 0.06 + 0.08 = 0.146
-\]
-
-### Conclusion
-
-Le script calcule ainsi un score d'interdisciplinarité pour chaque article en se basant sur la répartition des sujets dans les articles cités et leur dissimilarité, permettant de mesurer la diversité disciplinaire d'un ensemble de publications.
+4. Script Search_DOI_in_full_citation_matrix.py :
+- get_non_zero_topics() : Recherche les topics ayant une valeur non nulle pour un DOI donné dans une matrice de citation.
