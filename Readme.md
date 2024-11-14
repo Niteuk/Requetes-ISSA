@@ -16,50 +16,49 @@ Le projet est organisé en plusieurs répertoires principaux, chacun contenant d
 
 
 ## Fonctionnalités
-Calcul de l'indice de Rao-Stirling :
 
-Mesure l'interdisciplinarité à travers les citations et les dissimilarités entre sujets dans les articles scientifiques.
-Génération de matrices complètes de citation.
-Analyse des Topics et SDGs :
+#### Calcul de l'indice de Rao-Stirling :
+- Calcule l'interdisciplinarité à travers les citations et les dissimilarités entre sujets dans les articles scientifiques.
+- Génération de matrices complètes de citation.
 
-Récupère et analyse des objets comme les Sustainable Development Goals (SDGs), et les topics des publications.
-Génère des rapports sous forme de fichiers JSON et des graphiques pour visualiser les résultats.
-Export en RDF :
+#### Analyse des Topics et SDGs :
+- Récupère de OpenAlex puis analyse les Sustainable Development Goals (SDGs) et les topics des publications.
+- Génère des rapports sous forme de fichiers JSON et des graphiques pour visualiser les résultats.
 
-Convertit les résultats d'analyse en format RDF pour une intégration dans des systèmes de gestion de données.
+#### Export en RDF :
+- Convertit les résultats d'analyse en format RDF
 
 
 ## Environnement et Dépendances
 
 Le projet utilise Python 3.8+ et plusieurs bibliothèques, dont :
-
-requests : Pour effectuer des requêtes HTTP vers les API.
-numpy : Pour les calculs matriciels.
-pandas : Pour la manipulation de données.
-matplotlib : Pour la génération de graphiques.
-SPARQLWrapper : Pour interagir avec les endpoints SPARQL.
-PyYAML : Pour la gestion des fichiers de configuration YAML.
-tqdm : Pour afficher des barres de progression lors de l'exécution de scripts longs.
-concurrent.futures : Pour l'exécution parallèle des requêtes.
+- requests : Pour effectuer des requêtes HTTP vers les API.
+- numpy : Pour les calculs matriciels.
+- pandas : Pour la manipulation de données.
+- matplotlib : Pour la génération de graphiques.
+- SPARQLWrapper : Pour interagir avec les endpoints SPARQL.
+- PyYAML : Pour la gestion des fichiers de configuration YAML.
+- tqdm : Pour afficher des barres de progression lors de l'exécution de scripts longs.
+- concurrent.futures : Pour l'exécution parallèle des requêtes.
 
 
 ## Configuration et Logging
 
 Le dossier config contient les fichiers de configuration nécessaires pour les différents répertoires du projet. Il est structuré comme suit :
 
-- logging.yaml : Ce fichier configure le système de logging pour tous les scripts du projet. Il permet de suivre les différentes étapes d'exécution, de détecter les erreurs, et d'enregistrer des informations utiles pour le débogage. Tous les scripts dans les répertoires Data_Request et Interdisciplinarity utilisent ce fichier pour gérer leurs logs.
+- `logging.yaml` : Ce fichier configure le système de logging pour tous les scripts du projet. Il permet de suivre les différentes étapes d'exécution, de détecter les erreurs, et d'enregistrer des informations utiles pour le débogage. Tous les scripts dans les répertoires Data_Request et Interdisciplinarity utilisent ce fichier pour gérer leurs logs.
 
 - Data_Request : Ce sous-dossier contient un fichier de configuration YAML utilisé par les scripts dans le répertoire Data_Request. Il définit :
-Les endpoints SPARQL.
-Les chemins de sortie des fichiers JSON et RDF.
-Les paramètres pour l'API OpenAlex, tels que l'option mailto pour éviter les limitations d'API.
+    - Les endpoints SPARQL.
+    - Les chemins de sortie des fichiers JSON et RDF.
+    - Les paramètres pour l'API OpenAlex, tels que l'option mailto pour éviter les limitations d'API.
 
 - Interdisciplinarity : Ce sous-dossier contient trois fichiers de configuration pour les différents calculs effectués dans le répertoire 
-calcul_rao_stirling.yaml : Définit les paramètres pour le calcul de l'indice de Rao-Stirling, tels que le niveau de hiérarchie (topics, fields, domains).
-calcul_occurences.yaml : Contient les paramètres pour le calcul des occurrences des résultats d'indice Rao-Stirling.
-rao_stirling_in_rdf.yaml : Définit les paramètres pour la conversion des résultats en format RDF.
+    - `calcul_rao_stirling.yaml` : Définit les paramètres pour le calcul de l'indice de Rao-Stirling, tels que le niveau de hiérarchie (topics, fields, domains).
+    - `calcul_occurences.yaml` : Contient les paramètres pour le calcul des occurrences des résultats d'indice Rao-Stirling.
+    - `rao_stirling_in_rdf.yaml` : Définit les paramètres pour la conversion des résultats en format RDF.
 
-### Utilisation du Logging
+#### Utilisation du Logging
 Les répertoires Data_Request et Interdisciplinarity utilisent le fichier logging.yaml pour gérer l'enregistrement des événements, des erreurs, et des avertissements lors de l'exécution des scripts. Les niveaux de logging (DEBUG, INFO, WARNING, ERROR) peuvent être ajustés dans ce fichier pour augmenter ou réduire le niveau de détail des logs.
 
 

@@ -8,6 +8,7 @@ issa_sparql_endpoint:
         ?document bibo:doi ?doi .
     }
     GROUP BY ?document ?doi
+    # Keep only documents with a single DOI (multiple DOIs suggest duplicates)
     HAVING (COUNT(DISTINCT ?document) = 1)
     LIMIT 1
 
